@@ -1,0 +1,6975 @@
+<!DOCTYPE html>
+
+<html lang="ms">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>UniSZA Ride Merdeka 2026</title>
+
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+
+<style>
+
+/* =========================================================
+   ROOT
+   ========================================================= */
+
+:root{
+
+--yellow:#FFD400;
+--yellow2:#FFE45C;
+
+--black:#030303;
+--black2:#080808;
+--black3:#111111;
+
+--white:#FFFFFF;
+
+--gray:#8B8B8B;
+
+--red:#E52D27;
+
+--green:#4BE89A;
+
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+*{
+box-sizing:border-box;
+}
+
+
+html{
+scroll-behavior:smooth;
+}
+
+
+body{
+
+margin:0;
+
+background:
+
+radial-gradient(
+circle at 15% 10%,
+rgba(255,212,0,.07),
+transparent 25%
+),
+
+radial-gradient(
+circle at 90% 70%,
+rgba(255,212,0,.04),
+transparent 30%
+),
+
+#030303;
+
+color:#fff;
+
+font-family:
+Inter,
+Arial,
+sans-serif;
+
+overflow-x:hidden;
+
+}
+
+
+/* =========================================================
+   ABSTRACT BACKGROUND
+   ========================================================= */
+
+body:before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+opacity:.16;
+
+background-image:
+
+linear-gradient(
+135deg,
+transparent 48%,
+rgba(255,212,0,.15) 49%,
+transparent 50%
+);
+
+background-size:
+90px 90px;
+
+z-index:-2;
+
+}
+
+
+body:after{
+
+content:"";
+
+position:fixed;
+
+width:850px;
+height:850px;
+
+right:-500px;
+top:-500px;
+
+border-radius:50%;
+
+border:
+1px solid
+rgba(255,212,0,.25);
+
+box-shadow:
+
+0 0 0 50px
+rgba(255,212,0,.035),
+
+0 0 0 100px
+rgba(255,212,0,.025),
+
+0 0 0 150px
+rgba(255,212,0,.018);
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero{
+
+position:relative;
+
+min-height:590px;
+
+overflow:hidden;
+
+border-bottom:
+1px solid
+rgba(255,212,0,.22);
+
+}
+
+
+.banner{
+
+position:absolute;
+
+inset:0;
+
+background-size:cover;
+
+background-position:center;
+
+opacity:.48;
+
+display:none;
+
+}
+
+
+.banner.active{
+display:block;
+}
+
+
+.hero-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+90deg,
+#020202 0%,
+rgba(2,2,2,.95) 27%,
+rgba(2,2,2,.72) 58%,
+rgba(2,2,2,.25) 100%
+);
+
+}
+
+
+.hero-content{
+
+position:relative;
+
+z-index:3;
+
+max-width:1180px;
+
+margin:auto;
+
+padding:
+28px 25px 75px;
+
+}
+
+
+/* =========================================================
+   ADMIN TOP
+   ========================================================= */
+
+.admin-top-btn{
+
+position:absolute;
+
+top:25px;
+
+right:28px;
+
+z-index:20;
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+padding:
+11px 18px;
+
+border:
+1px solid
+rgba(255,212,0,.55);
+
+border-radius:999px;
+
+background:
+rgba(0,0,0,.72);
+
+color:var(--yellow);
+
+font-size:10px;
+
+font-weight:900;
+
+letter-spacing:1px;
+
+cursor:pointer;
+
+backdrop-filter:
+blur(10px);
+
+transition:.25s;
+
+}
+
+
+.admin-top-btn:hover{
+
+background:
+var(--yellow);
+
+color:#000;
+
+transform:
+translateY(-2px);
+
+box-shadow:
+0 10px 30px
+rgba(255,212,0,.2);
+
+}
+
+
+/* =========================================================
+   LOGOS
+   ========================================================= */
+
+.logos{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+margin-bottom:65px;
+
+}
+
+
+.logo{
+
+width:112px;
+
+height:82px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:
+transparent;
+
+border:none;
+
+}
+
+
+.logo img{
+
+max-width:100%;
+
+max-height:100%;
+
+width:auto;
+
+height:auto;
+
+object-fit:contain;
+
+filter:
+drop-shadow(
+0 8px 14px
+rgba(0,0,0,.65)
+);
+
+}
+
+
+.logo-placeholder{
+
+font-size:9px;
+
+font-weight:900;
+
+line-height:1.3;
+
+color:#707070;
+
+text-align:center;
+
+}
+
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+.eyebrow{
+
+font-family:
+"Bebas Neue";
+
+font-size:18px;
+
+letter-spacing:5px;
+
+color:var(--yellow);
+
+margin-bottom:10px;
+
+}
+
+
+.hero-title{
+
+font-family:
+Anton,
+sans-serif;
+
+font-size:
+clamp(76px,11vw,158px);
+
+line-height:.82;
+
+letter-spacing:-3px;
+
+margin:0;
+
+text-shadow:
+8px 8px 0 #000;
+
+}
+
+
+.hero-title .yellow{
+
+display:block;
+
+color:var(--yellow);
+
+font-size:.56em;
+
+letter-spacing:-1px;
+
+margin-top:16px;
+
+}
+
+
+.hero-description{
+
+max-width:670px;
+
+font-size:13px;
+
+line-height:1.8;
+
+color:#C5C5C5;
+
+margin-top:32px;
+
+}
+
+
+.badges{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin-top:25px;
+
+}
+
+
+.badge{
+
+padding:
+10px 17px;
+
+border:
+1px solid
+rgba(255,212,0,.4);
+
+border-radius:999px;
+
+background:
+rgba(0,0,0,.5);
+
+font-size:10px;
+
+font-weight:800;
+
+}
+
+
+.badge strong{
+
+color:var(--yellow);
+
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+.container{
+
+max-width:1100px;
+
+margin:auto;
+
+padding:
+0 20px 80px;
+
+}
+
+
+/* =========================================================
+   LATEST TOP
+   ========================================================= */
+
+.latest-top-card{
+
+position:relative;
+
+z-index:5;
+
+margin-top:-35px;
+
+padding:26px;
+
+background:
+linear-gradient(
+145deg,
+#161616,
+#080808
+);
+
+border:
+1px solid
+rgba(255,212,0,.28);
+
+border-radius:25px;
+
+box-shadow:
+0 30px 70px
+rgba(0,0,0,.6);
+
+overflow:hidden;
+
+}
+
+
+.latest-top-header{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:15px;
+
+margin-bottom:18px;
+
+}
+
+
+.latest-top-title{
+
+font-family:
+"Bebas Neue";
+
+font-size:32px;
+
+letter-spacing:1px;
+
+}
+
+
+.latest-top-title span{
+
+color:var(--yellow);
+
+}
+
+
+.latest-top-sub{
+
+font-size:10px;
+
+color:#777;
+
+margin-top:3px;
+
+}
+
+
+.latest-live{
+
+display:flex;
+
+align-items:center;
+
+gap:7px;
+
+font-size:8px;
+
+font-weight:900;
+
+color:var(--green);
+
+}
+
+
+.latest-live-dot{
+
+width:7px;
+
+height:7px;
+
+border-radius:50%;
+
+background:var(--green);
+
+box-shadow:
+0 0 10px
+rgba(75,232,154,.8);
+
+animation:
+pulseLive 1.5s infinite;
+
+}
+
+
+@keyframes pulseLive{
+
+0%,100%{
+opacity:1;
+}
+
+50%{
+opacity:.3;
+}
+
+}
+
+
+.latest-top-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:10px;
+
+}
+
+
+.latest-top-item{
+
+position:relative;
+
+padding:18px;
+
+border:
+1px solid
+rgba(255,255,255,.07);
+
+border-radius:17px;
+
+background:
+rgba(255,255,255,.025);
+
+overflow:hidden;
+
+}
+
+
+.latest-top-item:before{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+top:0;
+
+bottom:0;
+
+width:3px;
+
+background:var(--yellow);
+
+}
+
+
+.latest-top-rank{
+
+font-family:
+Anton;
+
+font-size:28px;
+
+color:var(--yellow);
+
+}
+
+
+.latest-top-name{
+
+font-size:13px;
+
+font-weight:900;
+
+margin-top:6px;
+
+white-space:nowrap;
+
+overflow:hidden;
+
+text-overflow:ellipsis;
+
+}
+
+
+.latest-top-ptj{
+
+font-size:9px;
+
+color:#999;
+
+margin-top:5px;
+
+white-space:nowrap;
+
+overflow:hidden;
+
+text-overflow:ellipsis;
+
+}
+
+
+.latest-top-time{
+
+font-size:9px;
+
+color:var(--yellow);
+
+margin-top:10px;
+
+font-weight:700;
+
+}
+
+
+.latest-empty{
+
+grid-column:
+1/-1;
+
+padding:22px;
+
+text-align:center;
+
+color:#666;
+
+font-size:11px;
+
+}
+
+
+.latest-footer{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:10px;
+
+margin-top:16px;
+
+padding-top:15px;
+
+border-top:
+1px solid
+rgba(255,255,255,.06);
+
+font-size:9px;
+
+color:#777;
+
+}
+
+
+.latest-footer strong{
+
+color:var(--yellow);
+
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.card{
+
+position:relative;
+
+overflow:hidden;
+
+background:
+linear-gradient(
+145deg,
+rgba(21,21,21,.98),
+rgba(7,7,7,.98)
+);
+
+border:
+1px solid
+rgba(255,255,255,.07);
+
+border-radius:24px;
+
+padding:30px;
+
+margin-top:22px;
+
+box-shadow:
+0 25px 70px
+rgba(0,0,0,.45);
+
+}
+
+
+.card:after{
+
+content:"";
+
+position:absolute;
+
+width:250px;
+
+height:250px;
+
+right:-170px;
+
+top:-170px;
+
+border-radius:50%;
+
+border:
+1px solid
+rgba(255,212,0,.15);
+
+box-shadow:
+
+0 0 0 35px
+rgba(255,212,0,.025),
+
+0 0 0 70px
+rgba(255,212,0,.015);
+
+pointer-events:none;
+
+}
+
+
+.card-title{
+
+font-family:
+"Bebas Neue";
+
+font-size:34px;
+
+letter-spacing:1px;
+
+margin:
+0 0 5px;
+
+}
+
+
+.card-title span{
+
+color:var(--yellow);
+
+}
+
+
+.card-desc{
+
+font-size:10px;
+
+color:#777;
+
+margin-bottom:24px;
+
+}
+
+
+/* =========================================================
+   CAPACITY
+   ========================================================= */
+
+.capacity{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:12px;
+
+}
+
+
+.capacity-box{
+
+padding:18px;
+
+text-align:center;
+
+border:
+1px solid
+rgba(255,255,255,.06);
+
+border-radius:17px;
+
+background:#101010;
+
+}
+
+
+.capacity-number{
+
+font-family:
+Anton;
+
+font-size:37px;
+
+color:var(--yellow);
+
+}
+
+
+.capacity-label{
+
+font-size:9px;
+
+color:#777;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+
+}
+
+
+/* =========================================================
+   IMPORTANT NOTE
+   ========================================================= */
+
+.important{
+
+position:relative;
+
+margin-top:22px;
+
+padding:25px;
+
+border:
+2px solid
+var(--yellow);
+
+border-radius:22px;
+
+background:
+
+linear-gradient(
+135deg,
+rgba(255,212,0,.14),
+rgba(255,212,0,.025)
+);
+
+box-shadow:
+0 0 40px
+rgba(255,212,0,.08);
+
+}
+
+
+.important h3{
+
+font-family:
+"Bebas Neue";
+
+font-size:30px;
+
+color:var(--yellow);
+
+margin:
+0 0 10px;
+
+}
+
+
+.important p{
+
+font-size:11px;
+
+line-height:1.75;
+
+color:#D0D0D0;
+
+margin:6px 0;
+
+}
+
+
+.important strong{
+
+color:#fff;
+
+}
+
+
+.important .highlight{
+
+color:var(--yellow);
+
+font-weight:900;
+
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.form-grid{
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:17px;
+
+}
+
+
+.full{
+
+grid-column:
+1/-1;
+
+}
+
+
+.group{
+
+display:flex;
+
+flex-direction:column;
+
+gap:7px;
+
+}
+
+
+label{
+
+font-size:9px;
+
+font-weight:900;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+
+color:#CFCFCF;
+
+}
+
+
+label span{
+
+color:var(--yellow);
+
+}
+
+
+input,
+select,
+textarea{
+
+width:100%;
+
+padding:14px;
+
+border:
+1px solid
+rgba(255,255,255,.1);
+
+border-radius:12px;
+
+background:#151515;
+
+color:#fff;
+
+font-family:Inter;
+
+font-size:12px;
+
+outline:none;
+
+}
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+border-color:
+var(--yellow);
+
+box-shadow:
+0 0 0 3px
+rgba(255,212,0,.07);
+
+}
+
+
+textarea{
+
+min-height:115px;
+
+resize:vertical;
+
+}
+
+
+select option{
+
+background:#151515;
+
+}
+
+
+/* =========================================================
+   CHECKBOX
+   ========================================================= */
+
+.check{
+
+display:flex;
+
+gap:10px;
+
+align-items:flex-start;
+
+padding:15px;
+
+border:
+1px solid
+rgba(255,255,255,.06);
+
+border-radius:14px;
+
+background:
+rgba(255,255,255,.025);
+
+}
+
+
+.check input{
+
+width:18px;
+
+height:18px;
+
+accent-color:
+var(--yellow);
+
+}
+
+
+.check label{
+
+font-size:10px;
+
+line-height:1.6;
+
+text-transform:none;
+
+letter-spacing:0;
+
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.btn{
+
+border:none;
+
+border-radius:13px;
+
+padding:14px 20px;
+
+font-family:Inter;
+
+font-weight:900;
+
+font-size:11px;
+
+cursor:pointer;
+
+transition:.2s;
+
+}
+
+
+.btn:hover{
+
+transform:
+translateY(-2px);
+
+}
+
+
+.btn:disabled{
+
+opacity:.5;
+
+cursor:not-allowed;
+
+transform:none;
+
+}
+
+
+.btn-yellow{
+
+width:100%;
+
+background:
+var(--yellow);
+
+color:#000;
+
+}
+
+
+.btn-yellow:hover{
+
+background:
+var(--yellow2);
+
+box-shadow:
+0 10px 25px
+rgba(255,212,0,.15);
+
+}
+
+
+.btn-dark{
+
+background:#222;
+
+color:#fff;
+
+border:
+1px solid
+rgba(255,255,255,.1);
+
+}
+
+
+.btn-red{
+
+width:100%;
+
+background:
+var(--red);
+
+color:#fff;
+
+}
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+.search-row{
+
+display:grid;
+
+grid-template-columns:
+1fr 145px;
+
+gap:10px;
+
+}
+
+
+/* =========================================================
+   SEARCH RESULT
+   ========================================================= */
+
+.result{
+
+margin-top:18px;
+
+}
+
+
+.result-card{
+
+padding:22px;
+
+border:
+1px solid
+rgba(255,212,0,.25);
+
+border-radius:20px;
+
+background:#101010;
+
+margin-bottom:12px;
+
+}
+
+
+.result-head{
+
+display:flex;
+
+align-items:flex-start;
+
+justify-content:space-between;
+
+gap:15px;
+
+margin-bottom:20px;
+
+}
+
+
+.result-name{
+
+font-family:
+"Bebas Neue";
+
+font-size:32px;
+
+}
+
+
+.status{
+
+padding:6px 10px;
+
+border-radius:999px;
+
+font-size:8px;
+
+font-weight:900;
+
+color:var(--green);
+
+border:
+1px solid
+rgba(73,232,155,.25);
+
+background:
+rgba(73,232,155,.08);
+
+}
+
+
+.info-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:9px;
+
+}
+
+
+.info{
+
+padding:11px;
+
+border-radius:11px;
+
+background:
+rgba(255,255,255,.025);
+
+}
+
+
+.info-label{
+
+font-size:8px;
+
+color:#666;
+
+text-transform:uppercase;
+
+letter-spacing:.8px;
+
+}
+
+
+.info-value{
+
+font-size:11px;
+
+font-weight:700;
+
+margin-top:4px;
+
+}
+
+
+/* =========================================================
+   EDIT
+   ========================================================= */
+
+.edit-box{
+
+display:none;
+
+margin-top:18px;
+
+padding:19px;
+
+border:
+1px solid
+rgba(255,212,0,.3);
+
+border-radius:18px;
+
+background:
+rgba(255,212,0,.035);
+
+}
+
+
+.edit-title{
+
+font-family:
+"Bebas Neue";
+
+font-size:27px;
+
+color:var(--yellow);
+
+}
+
+
+.edit-desc{
+
+font-size:10px;
+
+line-height:1.6;
+
+color:#777;
+
+margin:5px 0 15px;
+
+}
+
+
+.verify-box{
+
+padding:15px;
+
+background:#0A0A0A;
+
+border-radius:14px;
+
+}
+
+
+/* =========================================================
+   ABSENCE
+   ========================================================= */
+
+.absence{
+
+margin-top:18px;
+
+padding:18px;
+
+border:
+1px solid
+rgba(229,45,39,.45);
+
+border-radius:17px;
+
+background:
+rgba(80,0,0,.13);
+
+}
+
+
+.absence h3{
+
+font-family:
+"Bebas Neue";
+
+font-size:27px;
+
+color:#FF6B6B;
+
+margin:0 0 5px;
+
+}
+
+
+.absence p{
+
+font-size:10px;
+
+color:#999;
+
+line-height:1.6;
+
+}
+
+
+/* =========================================================
+   ADMIN MODAL
+   ========================================================= */
+
+.admin-modal{
+
+position:fixed;
+
+inset:0;
+
+z-index:9990;
+
+display:none;
+
+align-items:center;
+
+justify-content:center;
+
+padding:20px;
+
+background:
+rgba(0,0,0,.82);
+
+backdrop-filter:
+blur(9px);
+
+}
+
+
+.admin-modal.show{
+
+display:flex;
+
+}
+
+
+.admin-modal-box{
+
+position:relative;
+
+width:100%;
+
+max-width:420px;
+
+padding:28px;
+
+border:
+1px solid
+rgba(255,212,0,.4);
+
+border-radius:24px;
+
+background:
+linear-gradient(
+145deg,
+#181818,
+#080808
+);
+
+box-shadow:
+0 35px 100px
+rgba(0,0,0,.8);
+
+}
+
+
+.admin-modal-close{
+
+position:absolute;
+
+right:16px;
+
+top:14px;
+
+width:32px;
+
+height:32px;
+
+border:none;
+
+border-radius:50%;
+
+background:#222;
+
+color:#fff;
+
+font-size:18px;
+
+cursor:pointer;
+
+}
+
+
+.admin-modal-close:hover{
+
+background:var(--yellow);
+
+color:#000;
+
+}
+
+
+.admin-modal-title{
+
+font-family:
+"Bebas Neue";
+
+font-size:34px;
+
+color:var(--yellow);
+
+margin:0;
+
+}
+
+
+.admin-modal-sub{
+
+font-size:10px;
+
+line-height:1.6;
+
+color:#777;
+
+margin:
+5px 0 22px;
+
+}
+
+
+/* =========================================================
+   ADMIN PANEL
+   ========================================================= */
+
+.admin-panel{
+
+display:none;
+
+}
+
+
+.admin-stats{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:10px;
+
+margin-bottom:20px;
+
+}
+
+
+.admin-stat{
+
+padding:15px;
+
+border:
+1px solid
+rgba(255,255,255,.06);
+
+border-radius:15px;
+
+background:#101010;
+
+}
+
+
+.admin-stat span{
+
+font-size:8px;
+
+color:#777;
+
+}
+
+
+.admin-stat strong{
+
+display:block;
+
+font-family:Anton;
+
+font-size:28px;
+
+color:var(--yellow);
+
+margin-top:4px;
+
+}
+
+
+.table-wrap{
+
+overflow:auto;
+
+}
+
+
+table{
+
+width:100%;
+
+min-width:1050px;
+
+border-collapse:collapse;
+
+}
+
+
+th{
+
+padding:12px;
+
+text-align:left;
+
+font-size:9px;
+
+color:var(--yellow);
+
+background:#111;
+
+}
+
+
+td{
+
+padding:10px 12px;
+
+font-size:10px;
+
+color:#CCC;
+
+border-top:
+1px solid
+rgba(255,255,255,.06);
+
+}
+
+
+.delete{
+
+padding:7px 11px;
+
+border:none;
+
+border-radius:8px;
+
+background:#8D1717;
+
+color:#fff;
+
+font-size:9px;
+
+font-weight:900;
+
+cursor:pointer;
+
+}
+
+
+/* =========================================================
+   UPLOAD
+   ========================================================= */
+
+.upload{
+
+padding:16px;
+
+border:
+1px dashed
+rgba(255,212,0,.35);
+
+border-radius:15px;
+
+background:
+rgba(255,212,0,.02);
+
+}
+
+
+.upload input{
+
+border:none;
+
+padding:5px 0;
+
+background:transparent;
+
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+
+margin-top:0;
+
+padding:
+40px 20px 50px;
+
+text-align:center;
+
+border-top:
+1px solid
+rgba(255,255,255,.07);
+
+background:#020202;
+
+}
+
+
+.footer-title{
+
+font-family:
+"Bebas Neue";
+
+font-size:25px;
+
+color:var(--yellow);
+
+letter-spacing:1px;
+
+}
+
+
+.footer-sub{
+
+font-size:10px;
+
+color:#666;
+
+margin-top:6px;
+
+}
+
+
+/* =========================================================
+   TOAST
+   ========================================================= */
+
+.toast{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+z-index:9999;
+
+max-width:360px;
+
+padding:14px 17px;
+
+border:
+1px solid
+rgba(255,212,0,.35);
+
+border-radius:13px;
+
+background:#171717;
+
+font-size:11px;
+
+opacity:0;
+
+transform:
+translateY(20px);
+
+pointer-events:none;
+
+transition:.3s;
+
+}
+
+
+.toast.show{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+
+.toast.error{
+
+border-color:
+rgba(229,45,39,.6);
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:700px){
+
+.hero{
+
+min-height:555px;
+
+}
+
+
+.admin-top-btn{
+
+top:17px;
+
+right:15px;
+
+padding:
+9px 13px;
+
+}
+
+
+.hero-content{
+
+padding:
+20px 17px 55px;
+
+}
+
+
+.logos{
+
+gap:8px;
+
+margin-bottom:52px;
+
+}
+
+
+.logo{
+
+width:85px;
+
+height:65px;
+
+}
+
+
+.hero-title{
+
+font-size:76px;
+
+}
+
+
+.latest-top-card{
+
+margin-top:-20px;
+
+padding:20px;
+
+}
+
+
+.latest-top-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.latest-top-item{
+
+padding:14px;
+
+}
+
+
+.latest-footer{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.full{
+
+grid-column:auto;
+
+}
+
+
+.capacity{
+
+grid-template-columns:
+1fr 1fr;
+
+}
+
+
+.capacity-box:last-child{
+
+grid-column:
+1/-1;
+
+}
+
+
+.search-row{
+
+grid-template-columns:1fr;
+
+}
+
+
+.info-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.admin-stats{
+
+grid-template-columns:
+1fr 1fr;
+
+}
+
+
+.card{
+
+padding:20px;
+
+}
+
+}
+
+
+
+/* =========================================================
+   KEMASKINI MENGIKUT PERMINTAAN
+   - UniSZA Ride 2026 -> UniSZA Ride Merdeka 2026
+   - Tajuk NOTA PENTING -> merah
+   - Bermula BORANG PENDAFTARAN: kotak putih
+   - Font dibesarkan sedikit dan disesuaikan untuk kotak putih
+   - Background/layout/bahagian lain dikekalkan
+   ========================================================= */
+
+/* NOTA PENTING SEBELUM MENDAFTAR: warna merah sahaja */
+.important h3{
+  color:#d71920 !important;
+}
+
+/* BERMULA DARIPADA BORANG PENDAFTARAN SAHAJA */
+.important ~ section.card{
+  background:#ffffff !important;
+  color:#172033 !important;
+}
+
+/* Tajuk dan penerangan dalam kotak putih */
+.important ~ section.card .card-title{
+  color:#172033 !important;
+  font-size:calc(1em + 2px) !important;
+}
+
+.important ~ section.card .card-title span{
+  color:#d71920 !important;
+}
+
+.important ~ section.card .card-desc{
+  color:#4b5563 !important;
+  font-size:calc(1em + 1px) !important;
+}
+
+/* Label dan teks borang: dibesarkan sedikit */
+.important ~ section.card label,
+.important ~ section.card .group label{
+  color:#172033 !important;
+  font-size:calc(1em + 1px) !important;
+}
+
+.important ~ section.card input,
+.important ~ section.card select,
+.important ~ section.card textarea{
+  background:#ffffff !important;
+  color:#172033 !important;
+  border-color:#d1d5db !important;
+  font-size:calc(1em + 1px) !important;
+}
+
+/* Semua kotak kecil / info di dalam bahagian selepas Borang Pendaftaran */
+.important ~ section.card .info,
+.important ~ section.card .result-card,
+.important ~ section.card .verify-box,
+.important ~ section.card .search-row,
+.important ~ section.card .edit-box,
+.important ~ section.card .table-wrap,
+.important ~ section.card .admin-stat,
+.important ~ section.card .upload{
+  background:#ffffff !important;
+  color:#172033 !important;
+  border-color:#d1d5db !important;
+}
+
+/* Teks dalaman untuk kekal jelas pada background putih */
+.important ~ section.card .info-label,
+.important ~ section.card .edit-desc,
+.important ~ section.card .result-head,
+.important ~ section.card .search-row,
+.important ~ section.card .table-wrap,
+.important ~ section.card .upload,
+.important ~ section.card .admin-modal-sub{
+  color:#4b5563 !important;
+  font-size:calc(1em + 1px) !important;
+}
+
+.important ~ section.card .info-value,
+.important ~ section.card .result-name,
+.important ~ section.card .edit-title,
+.important ~ section.card .admin-stat strong,
+.important ~ section.card .admin-stat span{
+  color:#172033 !important;
+}
+
+/* Admin/statistik yang berada selepas Borang Pendaftaran */
+.important ~ section.card .admin-stat{
+  background:#ffffff !important;
+  color:#172033 !important;
+}
+
+/* Sedikit pembesaran teks umum selepas Borang Pendaftaran */
+.important ~ section.card{
+  font-size:calc(1em + 1px) !important;
+}
+
+/* Paparan telefon */
+@media (max-width:700px){
+  .important ~ section.card{
+    font-size:calc(1em + 1px) !important;
+  }
+}
+
+
+
+/* =========================================================
+   KEDUDUKAN LOGO — PERUBAHAN SAHAJA
+   Susunan: UniSZA | PPHP | Pendaftar
+   ========================================================= */
+.logos{
+  width:100% !important;
+  display:flex !important;
+  justify-content:flex-end !important;
+  align-items:center !important;
+  gap:14px !important;
+  margin-left:auto !important;
+}
+
+/* Semua logo menggunakan saiz visual yang sama */
+.logos .logo{
+  width:96px !important;
+  height:72px !important;
+  flex:0 0 96px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+/* Stroke putih nipis yang disesuaikan dengan logo */
+.logos .logo img{
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  max-height:100% !important;
+  object-fit:contain !important;
+  filter:
+    drop-shadow(1px 0 0 rgba(255,255,255,.92))
+    drop-shadow(-1px 0 0 rgba(255,255,255,.92))
+    drop-shadow(0 1px 0 rgba(255,255,255,.92))
+    drop-shadow(0 -1px 0 rgba(255,255,255,.92))
+    drop-shadow(0 6px 10px rgba(0,0,0,.55)) !important;
+}
+
+/* Placeholder logo juga sama saiz dan kemas */
+.logos .logo-placeholder{
+  width:100%;
+  text-align:center;
+}
+
+@media(max-width:700px){
+  .logos{
+    justify-content:flex-end !important;
+    gap:8px !important;
+  }
+
+  .logos .logo{
+    width:72px !important;
+    height:58px !important;
+    flex:0 0 72px !important;
+  }
+
+  .logos .logo img{
+    filter:
+      drop-shadow(1px 0 0 rgba(255,255,255,.9))
+      drop-shadow(-1px 0 0 rgba(255,255,255,.9))
+      drop-shadow(0 1px 0 rgba(255,255,255,.9))
+      drop-shadow(0 -1px 0 rgba(255,255,255,.9))
+      drop-shadow(0 4px 8px rgba(0,0,0,.5)) !important;
+  }
+}
+
+
+
+/* DATA PILIHAN & PAPARAN DROPDOWN */
+#licenseClass,
+#roadtaxStatus,
+#heirRelation,
+#shirtSize{
+  background:#ffffff !important;
+  color:#172033 !important;
+}
+
+#licenseClass option,
+#roadtaxStatus option,
+#heirRelation option,
+#shirtSize option{
+  background:#ffffff !important;
+  color:#172033 !important;
+}
+
+/* =========================================================
+   ADMIN PAGE ASING — PENGAMBILAN BAJU MANUAL
+   ========================================================= */
+#adminManualPage{display:none;min-height:100vh;background:#f4f4f2;padding:26px 18px 60px;color:#1f2937;}
+.admin-manual-shell{max-width:980px;margin:0 auto;}
+.admin-manual-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:24px;}
+.admin-manual-kicker{font-size:12px;letter-spacing:3px;font-weight:900;color:#b42318;margin-bottom:8px;}
+.admin-manual-title{margin:0;font-size:44px;line-height:1;font-weight:950;color:#263247;}
+.admin-manual-title span{color:#c62828;}
+.admin-manual-sub{margin:12px 0 0;color:#667085;font-size:16px;line-height:1.6;}
+.admin-manual-back{border:none;border-radius:12px;padding:13px 18px;font-weight:900;background:#202938;color:#fff;cursor:pointer;}
+.admin-manual-card{background:#fff;border:1px solid #d9dde5;border-radius:22px;padding:28px;box-shadow:0 10px 30px rgba(16,24,40,.08);margin-top:18px;}
+.admin-manual-card h2{margin:0 0 8px;font-size:27px;color:#263247;}
+.admin-manual-card h2 span{color:#c62828;}
+.admin-manual-card p{margin:0;color:#667085;line-height:1.6;}
+.admin-login-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px;}
+.admin-manual-field{display:flex;flex-direction:column;gap:8px;}
+.admin-manual-field label{font-weight:900;font-size:13px;color:#344054;letter-spacing:.6px;}
+.admin-manual-field input{width:100%;box-sizing:border-box;border:1px solid #cfd4dc;border-radius:12px;padding:15px;font-size:16px;outline:none;background:#fff;}
+.admin-manual-field input:focus{border-color:#c62828;box-shadow:0 0 0 3px rgba(198,40,40,.12);}
+.admin-manual-btn{border:none;border-radius:12px;padding:15px 20px;font-size:15px;font-weight:950;cursor:pointer;background:#c62828;color:#fff;margin-top:16px;}
+.admin-manual-btn:disabled{opacity:.55;cursor:not-allowed;}
+.admin-manual-search{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end;margin-top:18px;}
+.admin-manual-search .admin-manual-btn{margin-top:0;min-width:170px;}
+.admin-manual-message{display:none;margin-top:14px;padding:13px 15px;border-radius:12px;font-weight:800;}
+.admin-manual-message.show{display:block;}
+.admin-manual-message.error{background:#fee4e2;color:#b42318;}
+.admin-manual-message.ok{background:#dcfae6;color:#067647;}
+.admin-manual-results{display:grid;gap:12px;margin-top:18px;}
+.admin-shirt-result{border:1px solid #d8dde5;border-radius:16px;padding:18px;background:#fff;display:flex;justify-content:space-between;gap:16px;align-items:center;}
+.admin-shirt-result h3{margin:0 0 6px;font-size:20px;color:#263247;}
+.admin-shirt-meta{font-size:13px;color:#667085;line-height:1.7;}
+.admin-shirt-size{font-size:14px;font-weight:900;color:#8a6200;background:#fff2b8;padding:8px 12px;border-radius:999px;display:inline-block;margin-top:8px;}
+.admin-shirt-status{font-size:12px;font-weight:950;padding:8px 11px;border-radius:999px;display:inline-block;margin-top:8px;}
+.admin-shirt-status.pending{background:#fff4cc;color:#8a6200;}
+.admin-shirt-status.done{background:#dcfae6;color:#067647;}
+.admin-shirt-action{border:none;border-radius:11px;padding:12px 16px;font-weight:950;cursor:pointer;background:#202938;color:#fff;white-space:nowrap;}
+.admin-shirt-action.done{background:#e9eaec;color:#667085;cursor:not-allowed;}
+.admin-confirm-box{margin-top:18px;border:2px solid #c62828;border-radius:18px;padding:22px;background:#fff8f8;}
+.admin-confirm-box h3{margin:0 0 10px;font-size:25px;color:#263247;}
+.admin-confirm-details{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:14px 0;}
+.admin-confirm-detail{padding:12px;border-radius:12px;background:#fff;border:1px solid #ead3d3;}
+.admin-confirm-detail b{display:block;font-size:11px;color:#98a2b3;letter-spacing:1px;margin-bottom:5px;}
+.admin-confirm-detail span{font-weight:900;color:#263247;}
+.admin-confirm-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;}
+.admin-cancel-btn{border:none;border-radius:12px;padding:14px 18px;font-weight:900;background:#eceff3;color:#344054;cursor:pointer;}
+body.admin-manual-mode > *:not(#adminManualPage):not(script){display:none !important;}
+body.admin-manual-mode{background:#f4f4f2 !important;}
+@media(max-width:700px){
+  #adminManualPage{padding:18px 12px 40px;}
+  .admin-manual-top{flex-direction:column;}
+  .admin-manual-title{font-size:35px;}
+  .admin-login-grid,.admin-manual-search{grid-template-columns:1fr;}
+  .admin-manual-search .admin-manual-btn{width:100%;}
+  .admin-shirt-result{flex-direction:column;align-items:stretch;}
+  .admin-shirt-action{width:100%;}
+  .admin-confirm-details{grid-template-columns:1fr;}
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HERO
+     ===================================================== -->
+
+<header class="hero">
+
+
+<div
+id="banner"
+class="banner">
+</div>
+
+
+<div class="hero-overlay"></div>
+
+
+<!-- ADMIN -->
+
+<button
+class="admin-top-btn"
+onclick="openAdminModal()">
+
+🔐 ADMIN
+
+</button>
+
+
+<div class="hero-content">
+
+
+<!-- LOGOS -->
+
+<div class="logos">
+
+<div class="logo">
+
+<img
+id="uniszaLogo"
+style="display:none">
+
+<div
+id="uniszaPlaceholder"
+class="logo-placeholder">
+
+LOGO<br>UniSZA
+
+</div>
+
+</div>
+
+<div class="logo">
+
+<img
+id="pphpLogo"
+style="display:none">
+
+<div
+id="pphpPlaceholder"
+class="logo-placeholder">
+
+LOGO<br>PPHP
+
+</div>
+
+</div>
+
+<div class="logo">
+
+<img
+id="pendaftarLogo"
+style="display:none">
+
+<div
+id="pendaftarPlaceholder"
+class="logo-placeholder">
+
+LOGO<br>PENDAFTAR
+
+</div>
+
+</div>
+
+</div><div class="eyebrow">
+
+PENDAFTARAN PESERTA
+
+</div>
+
+
+<h1 class="hero-title">
+
+UniSZA
+
+<span class="yellow">
+RIDE MERDEKA 2026
+</span>
+
+</h1>
+
+
+<p class="hero-description">
+
+Ride Merdeka 2026 bersama warga UniSZA dengan semangat
+kekitaan, disiplin dan keselamatan.
+Sila pastikan anda benar-benar bersedia
+untuk menyertai program sebelum mendaftar.
+
+</p>
+
+
+<div class="badges">
+
+<div class="badge">
+
+<strong id="heroCapacity">
+100
+</strong>
+
+PESERTA
+
+</div>
+
+
+<div class="badge">
+
+<strong id="heroRemaining">
+100
+</strong>
+
+SLOT TERSEDIA
+
+</div>
+
+
+<div class="badge">
+
+🏍️ RIDE TOGETHER
+
+</div>
+
+</div>
+
+
+</div>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+     ===================================================== -->
+
+<main class="container">
+
+
+<!-- =====================================================
+     LATEST PARTICIPANTS
+     ===================================================== -->
+
+<section class="latest-top-card">
+
+
+<div class="latest-top-header">
+
+
+<div>
+
+<div class="latest-top-title">
+
+🏍️ PESERTA
+<span>TERKINI</span>
+
+</div>
+
+
+<div class="latest-top-sub">
+
+Peserta yang telah berjaya mendaftar
+
+</div>
+
+</div>
+
+
+<div class="latest-live">
+
+<div class="latest-live-dot"></div>
+
+LIVE
+
+</div>
+
+
+</div>
+
+
+<div
+id="latestTop"
+class="latest-top-grid">
+
+<div class="latest-empty">
+
+Memuatkan senarai peserta...
+
+</div>
+
+</div>
+
+
+<div class="latest-footer">
+
+<div>
+
+<strong id="topTotal">
+0
+</strong>
+
+PESERTA TELAH MENDAFTAR
+
+</div>
+
+
+<div>
+
+BAKI:
+
+<strong id="topRemaining">
+100
+</strong>
+
+SLOT
+
+</div>
+
+</div>
+
+
+</section>
+
+
+<!-- =====================================================
+     STATUS
+     ===================================================== -->
+
+<section class="card">
+
+
+<h2 class="card-title">
+
+STATUS
+<span>PENDAFTARAN</span>
+
+</h2>
+
+
+<div class="card-desc">
+
+Kapasiti semasa pendaftaran UniSZA Ride Merdeka 2026.
+
+</div>
+
+
+<div class="capacity">
+
+
+<div class="capacity-box">
+
+<div
+class="capacity-number"
+id="total">
+
+0
+
+</div>
+
+<div class="capacity-label">
+
+Telah Mendaftar
+
+</div>
+
+</div>
+
+
+<div class="capacity-box">
+
+<div
+class="capacity-number"
+id="remaining">
+
+100
+
+</div>
+
+<div class="capacity-label">
+
+Slot Tersedia
+
+</div>
+
+</div>
+
+
+<div class="capacity-box">
+
+<div
+class="capacity-number"
+id="capacity">
+
+100
+
+</div>
+
+<div class="capacity-label">
+
+Kapasiti
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+<!-- =====================================================
+     IMPORTANT
+     ===================================================== -->
+
+<section class="important">
+
+
+<h3>
+
+⚠️ NOTA PENTING SEBELUM MENDAFTAR
+
+</h3>
+
+
+<p>
+
+<strong>
+
+Pendaftaran ini hanya untuk rider yang
+benar-benar berhasrat dan bersedia
+menyertai UniSZA Ride Merdeka 2026.
+
+</strong>
+
+</p>
+
+
+<p>
+
+Kapasiti peserta ditetapkan kepada
+<span class="highlight">
+100 ORANG SAHAJA.
+</span>
+
+</p>
+
+
+<p>
+
+Mana-mana peserta yang telah berjaya
+mendaftar tetapi pada saat akhir
+<strong>
+tidak dapat menyertai program,
+WAJIB memaklumkan semula kepada
+pihak urusetia.
+</strong>
+
+</p>
+
+
+<p>
+
+Pihak PPHP berkolaborasi dengan
+<strong>
+Pejabat Pendaftar UniSZA
+</strong>
+dan pihak Pendaftar akan mengeluarkan
+surat pengecualian bertugas semasa hari program.
+
+</p>
+
+
+<p class="highlight">
+
+⚠️ Sila pastikan anda benar-benar boleh
+menyertai program sebelum menghantar
+pendaftaran.
+
+</p>
+
+
+</section>
+
+
+<!-- =====================================================
+     REGISTRATION
+     ===================================================== -->
+
+<section class="card">
+
+
+<h2 class="card-title">
+
+BORANG
+<span>PENDAFTARAN</span>
+
+</h2>
+
+
+<div class="card-desc">
+
+Sila isi semua maklumat dengan tepat.
+
+</div>
+
+
+<form id="registerForm">
+
+
+<div class="form-grid">
+
+
+<div class="group">
+
+<label>
+Nama <span>*</span>
+</label>
+
+<input
+id="name"
+autocomplete="name"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>
+No. Pekerja <span>*</span>
+</label>
+
+<input
+id="noPekerja"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>
+PTJ <span>*</span>
+</label>
+
+<input
+id="ptj"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>
+No. Telefon <span>*</span>
+</label>
+
+<input
+id="phone"
+type="tel"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>
+Jenis Motosikal <span>*</span>
+</label>
+
+<input
+id="motorType"
+placeholder="Contoh: Kapcai / Scooter / Touring"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>
+Jenama Motosikal <span>*</span>
+</label>
+
+<input
+id="motorBrand"
+placeholder="Contoh: Yamaha NVX"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>
+C.C <span>*</span>
+</label>
+
+<input
+id="cc"
+placeholder="Contoh: 155cc"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>
+No. Plat <span>*</span>
+</label>
+
+<input
+id="plate"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>
+Kelas Lesen <span>*</span>
+</label>
+
+<select
+id="licenseClass"
+required>
+
+<option value="">Pilih kelas lesen</option>
+<option value="B2">B2</option>
+<option value="B1">B1</option>
+<option value="B">B</option>
+<option value="Lain-lain">Lain-lain</option>
+
+</select>
+
+</div>
+
+
+<div class="group">
+
+<label>
+Tarikh Luput Lesen <span>*</span>
+</label>
+
+<input
+id="licenseExpiry"
+type="date"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>
+Status Roadtax <span>*</span>
+</label>
+
+<select
+id="roadtaxStatus"
+required>
+
+<option value="">Pilih status roadtax</option>
+<option value="Masih Sah">Masih Sah</option>
+<option value="Tamat Tempoh">Tamat Tempoh</option>
+<option value="Tidak Pasti">Tidak Pasti</option>
+
+</select>
+
+</div>
+
+
+<div class="group">
+
+<label>
+Tarikh Luput Roadtax
+</label>
+
+<input
+id="roadtaxExpiry"
+type="date">
+
+</div>
+
+
+<div class="full">
+
+<h3
+class="card-title"
+style="font-size:25px;margin-top:10px">
+
+MAKLUMAT
+<span>WARIS</span>
+
+</h3>
+
+</div>
+
+
+<div class="group">
+
+<label>
+Nama Waris <span>*</span>
+</label>
+
+<input
+id="heirName"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>
+Hubungan Waris <span>*</span>
+</label>
+
+<select
+id="heirRelation"
+required>
+
+<option value="">Pilih hubungan waris</option>
+<option value="Isteri">Isteri</option>
+<option value="Suami">Suami</option>
+<option value="Ibu">Ibu</option>
+<option value="Bapa">Bapa</option>
+<option value="Anak">Anak</option>
+<option value="Adik">Adik</option>
+<option value="Abang">Abang</option>
+<option value="Kakak">Kakak</option>
+<option value="Saudara / Saudari">Saudara / Saudari</option>
+<option value="Lain-lain">Lain-lain</option>
+
+</select>
+
+</div>
+
+
+<div class="group">
+
+<label>
+No. Telefon Waris <span>*</span>
+</label>
+
+<input
+id="heirPhone"
+type="tel"
+required>
+
+</div>
+
+
+<div class="group">
+
+<label>
+Nama Contact Kecemasan Alternatif
+</label>
+
+<input
+id="altEmergencyName">
+
+</div>
+
+
+<div class="group">
+
+<label>
+No. Telefon Kecemasan Alternatif
+</label>
+
+<input
+id="altEmergencyPhone"
+type="tel">
+
+</div>
+
+
+<div class="group">
+
+<label>
+Saiz Baju <span>*</span>
+</label>
+
+<select
+id="shirtSize"
+required>
+
+<option value="">Pilih saiz baju</option>
+<option value="XS">XS</option>
+<option value="S">S</option>
+<option value="M">M</option>
+<option value="L">L</option>
+<option value="XL">XL</option>
+<option value="2XL">2XL</option>
+<option value="3XL">3XL</option>
+<option value="4XL">4XL</option>
+<option value="5XL">5XL</option>
+
+</select>
+
+</div>
+
+
+<div class="full">
+
+<div class="check">
+
+<input
+type="checkbox"
+id="agreement"
+required>
+
+
+<label for="agreement">
+
+Saya mengesahkan semua maklumat yang
+diberikan adalah benar dan saya benar-benar
+bersedia menyertai program UniSZA Ride Merdeka 2026.
+
+</label>
+
+</div>
+
+</div>
+
+
+<div class="full">
+
+<button
+class="btn btn-yellow"
+id="registerBtn"
+type="submit">
+
+🏍️ HANTAR PENDAFTARAN
+
+</button>
+
+</div>
+
+
+</div>
+
+</form>
+
+
+</section>
+
+
+<!-- =====================================================
+     SEARCH
+     ===================================================== -->
+
+<section class="card">
+
+
+<h2 class="card-title">
+
+SEMAK
+<span>PENDAFTARAN</span>
+
+</h2>
+
+
+<div class="card-desc">
+
+Masukkan nama sahaja untuk menyemak
+status pendaftaran.
+
+</div>
+
+
+<div class="search-row">
+
+<input
+id="searchName"
+placeholder="Masukkan nama peserta"
+onkeydown="
+if(event.key==='Enter')
+searchParticipant();
+">
+
+
+<button
+class="btn btn-yellow"
+onclick="searchParticipant()">
+
+SEMAK
+
+</button>
+
+</div>
+
+
+<div
+id="searchResult"
+class="result">
+
+</div>
+
+
+</section>
+
+
+<!-- =====================================================
+     ADMIN PANEL
+     ===================================================== -->
+
+<section
+id="adminSection"
+class="card admin-panel">
+
+
+<h2 class="card-title">
+
+ADMIN
+<span>PANEL</span>
+
+</h2>
+
+
+<div class="card-desc">
+
+Kawasan pengurusan pihak urusetia.
+
+</div>
+<div class="admin-stats">
+
+
+<div class="admin-stat">
+
+<span>
+PESERTA
+</span>
+
+<strong
+id="adminTotal">
+0
+</strong>
+
+</div>
+
+
+<div class="admin-stat">
+
+<span>
+KAPASITI
+</span>
+
+<strong
+id="adminCapacity">
+100
+</strong>
+
+</div>
+
+
+<div class="admin-stat">
+
+<span>
+BAKI
+</span>
+
+<strong
+id="adminRemaining">
+100
+</strong>
+
+</div>
+
+
+<div class="admin-stat">
+
+<span>
+STATUS
+</span>
+
+<strong
+style="font-size:16px">
+
+AKTIF
+
+</strong>
+
+</div>
+
+
+</div>
+
+
+<!-- CAPACITY -->
+
+<div style="
+border-top:1px solid rgba(255,255,255,.07);
+padding-top:20px;">
+
+
+<h3
+class="card-title"
+style="font-size:24px">
+
+TETAPAN
+<span>KAPASITI</span>
+
+</h3>
+
+
+<div class="search-row">
+
+<input
+id="newCapacity"
+type="number"
+min="1"
+placeholder="Contoh: 120">
+
+
+<button
+class="btn btn-yellow"
+onclick="saveCapacity()">
+
+SIMPAN
+
+</button>
+
+</div>
+
+
+<div style="
+font-size:9px;
+color:#666;
+margin-top:8px">
+
+Hanya Admin boleh menambah kapasiti.
+
+</div>
+
+
+</div>
+
+
+<!-- MEDIA -->
+
+<div style="
+border-top:1px solid rgba(255,255,255,.07);
+padding-top:20px;
+margin-top:25px;">
+
+
+<h3
+class="card-title"
+style="font-size:24px">
+
+MEDIA
+<span>WEBSITE</span>
+
+</h3>
+
+
+<div class="form-grid">
+
+
+<div class="upload">
+
+<label>
+Banner Atas
+</label>
+
+<input
+type="file"
+id="bannerFile"
+accept="image/*">
+
+<button
+class="btn btn-yellow"
+style="margin-top:10px"
+onclick="
+uploadMedia(
+'bannerFile',
+'BANNER'
+)">
+
+UPLOAD
+
+</button>
+
+</div>
+
+
+<div class="upload">
+
+<label>
+Logo UniSZA
+</label>
+
+<input
+type="file"
+id="uniszaFile"
+accept="image/*">
+
+<button
+class="btn btn-yellow"
+style="margin-top:10px"
+onclick="
+uploadMedia(
+'uniszaFile',
+'UNISZA'
+)">
+
+UPLOAD
+
+</button>
+
+</div>
+
+
+<div class="upload">
+
+<label>
+Logo Pendaftar
+</label>
+
+<input
+type="file"
+id="pendaftarFile"
+accept="image/*">
+
+<button
+class="btn btn-yellow"
+style="margin-top:10px"
+onclick="
+uploadMedia(
+'pendaftarFile',
+'PENDAFTAR'
+)">
+
+UPLOAD
+
+</button>
+
+</div>
+
+
+<div class="upload">
+
+<label>
+Logo PPHP
+</label>
+
+<input
+type="file"
+id="pphpFile"
+accept="image/*">
+
+<button
+class="btn btn-yellow"
+style="margin-top:10px"
+onclick="
+uploadMedia(
+'pphpFile',
+'PPHP'
+)">
+
+UPLOAD
+
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- PARTICIPANTS -->
+
+<div style="
+border-top:1px solid rgba(255,255,255,.07);
+padding-top:20px;
+margin-top:25px;">
+
+
+<h3
+class="card-title"
+style="font-size:24px">
+
+SENARAI
+<span>PESERTA</span>
+
+</h3>
+
+
+<div class="table-wrap">
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>NAMA</th>
+
+<th>PTJ</th>
+
+<th>NO. PLAT</th>
+
+<th>MOTOR</th>
+
+<th>BAJU</th>
+
+<th>MASA DAFTAR</th>
+
+<th>STATUS</th>
+
+<th>AKSI</th>
+
+</tr>
+
+</thead>
+
+
+<tbody
+id="adminBody">
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+</div>
+
+
+<button
+class="btn btn-dark"
+style="margin-top:20px"
+onclick="logoutAdmin()">
+
+LOG KELUAR
+
+</button>
+
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+
+
+<!-- =====================================================
+     ADMIN PAGE ASING — PENGAMBILAN BAJU MANUAL
+     ===================================================== -->
+<section id="adminManualPage">
+  <div class="admin-manual-shell">
+
+    <div class="admin-manual-top">
+      <div>
+        <div class="admin-manual-kicker">KAWASAN URUSETIA</div>
+        <h1 class="admin-manual-title">ADMIN <span>PENGAMBILAN BAJU</span></h1>
+        <p class="admin-manual-sub">Taip nama peserta secara manual, pilih rekod yang betul dan sahkan pengambilan baju. Tiada QR diperlukan.</p>
+      </div>
+      <button type="button" class="admin-manual-back" onclick="goBackToPublic()">← KEMBALI KE PENDAFTARAN</button>
+    </div>
+
+    <div id="adminManualLoginCard" class="admin-manual-card">
+      <h2>LOG MASUK <span>URUSETIA</span></h2>
+      <p>Gunakan akaun Admin untuk mengakses rekod pengambilan baju.</p>
+
+      <div class="admin-login-grid">
+        <div class="admin-manual-field">
+          <label>USERNAME</label>
+          <input id="manualAdminUsername" type="text" autocomplete="username" value="admin">
+        </div>
+        <div class="admin-manual-field">
+          <label>PASSWORD</label>
+          <input id="manualAdminPassword" type="password" autocomplete="current-password">
+        </div>
+      </div>
+
+      <div id="manualAdminLoginMessage" class="admin-manual-message"></div>
+
+      <button type="button" class="admin-manual-btn" onclick="manualAdminLogin()">LOG MASUK ADMIN</button>
+    </div>
+
+    <div id="adminManualPickupCard" class="admin-manual-card" style="display:none;">
+      <h2>CARI PESERTA <span>SECARA MANUAL</span></h2>
+      <p>Taip nama peserta. Jika terdapat nama yang sama atau hampir sama, sistem akan memaparkan semua rekod yang sepadan.</p>
+
+      <div class="admin-manual-search">
+        <div class="admin-manual-field">
+          <label>NAMA PESERTA</label>
+          <input id="manualPickupName" type="text" placeholder="Contoh: Mohd Hanafi" onkeydown="if(event.key==='Enter') manualSearchPickupParticipant()">
+        </div>
+        <button type="button" class="admin-manual-btn" onclick="manualSearchPickupParticipant()">CARI PESERTA</button>
+      </div>
+
+      <div id="manualPickupMessage" class="admin-manual-message"></div>
+      <div id="manualPickupResults" class="admin-manual-results"></div>
+
+      <div id="manualPickupConfirm" class="admin-confirm-box" style="display:none;">
+        <h3>SAHKAN PENGAMBILAN BAJU</h3>
+        <p>Pastikan peserta dan saiz baju adalah betul sebelum menekan butang sahkan.</p>
+
+        <div class="admin-confirm-details">
+          <div class="admin-confirm-detail"><b>NAMA</b><span id="manualConfirmName">-</span></div>
+          <div class="admin-confirm-detail"><b>ID PENDAFTARAN</b><span id="manualConfirmId">-</span></div>
+          <div class="admin-confirm-detail"><b>SAIZ BAJU</b><span id="manualConfirmSize">-</span></div>
+          <div class="admin-confirm-detail"><b>PTJ</b><span id="manualConfirmPtj">-</span></div>
+        </div>
+
+        <div class="admin-confirm-actions">
+          <button type="button" class="admin-manual-btn" id="manualConfirmButton" onclick="manualConfirmPickup()">✓ SAHKAN BAJU TELAH DIAMBIL</button>
+          <button type="button" class="admin-cancel-btn" onclick="manualCancelPickup()">BATAL</button>
+        </div>
+
+        <div id="manualConfirmMessage" class="admin-manual-message"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+
+
+<div class="footer-title">
+
+Pusat Pembangunan Holistik Pelajar
+
+</div>
+
+
+<div class="footer-sub">
+
+Universiti Sultan Zainal Abidin (UniSZA)
+
+</div>
+
+
+<div
+class="footer-sub"
+style="margin-top:12px">
+
+© 2026 UniSZA Ride Merdeka 2026
+
+</div>
+
+
+</footer>
+
+<!-- =====================================================
+     ADMIN MODAL
+     ===================================================== -->
+
+<div
+id="adminModal"
+class="admin-modal"
+onclick="closeAdminOutside(event)">
+
+
+<div
+class="admin-modal-box"
+onclick="event.stopPropagation()">
+
+
+<button
+class="admin-modal-close"
+onclick="closeAdminModal()">
+
+×
+
+</button>
+
+
+<div class="admin-modal-title">
+
+ADMIN LOGIN
+
+</div>
+
+
+<div class="admin-modal-sub">
+
+Akses khas untuk pihak urusetia
+UniSZA Ride Merdeka 2026.
+
+</div>
+
+
+<div class="group">
+
+<label>
+Username
+</label>
+
+<input
+id="adminUsername"
+value="admin"
+autocomplete="username">
+
+</div>
+
+
+<div
+class="group"
+style="margin-top:15px">
+
+<label>
+Password
+</label>
+
+<input
+id="adminPassword"
+type="password"
+autocomplete="current-password"
+onkeydown="
+if(event.key==='Enter')
+loginAdmin();
+">
+
+</div>
+
+
+<button
+class="btn btn-yellow"
+style="margin-top:18px"
+onclick="loginAdmin()">
+
+🔐 LOG MASUK ADMIN
+
+</button>
+
+
+</div>
+
+</div>
+
+<!-- =====================================================
+     TOAST
+     ===================================================== -->
+
+<div
+id="toast"
+class="toast">
+</div>
+
+
+<script>
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+let searchResults = [];
+
+
+let admin = {
+
+username:'',
+password:''
+
+};
+
+/* =========================================================
+   ADMIN PAGE ASING — PENGAMBILAN BAJU MANUAL
+   ========================================================= */
+
+let manualAdmin = { username:'', password:'' };
+let manualPickupSelected = null;
+
+function isManualAdminMode(){
+  const params = new URLSearchParams(window.location.search);
+  return params.get('admin') === '1';
+}
+
+function openAdminModal(){
+  const url = new URL(window.location.href);
+  url.search = '';
+  url.hash = '';
+  url.searchParams.set('admin','1');
+  window.location.href = url.toString();
+}
+
+function goBackToPublic(){
+  const url = new URL(window.location.href);
+  url.search = '';
+  url.hash = '';
+  window.location.href = url.toString();
+}
+
+function initManualAdminPage(){
+  if(!isManualAdminMode()) return;
+
+  document.body.classList.add('admin-manual-mode');
+
+  const page = document.getElementById('adminManualPage');
+  if(page) page.style.display = 'block';
+
+  document.title = 'Admin Pengambilan Baju - UniSZA Ride Merdeka 2026';
+
+  setTimeout(function(){
+    const input = document.getElementById('manualAdminPassword');
+    if(input) input.focus();
+  },100);
+}
+
+function setManualMessage(id, message, type){
+  const el = document.getElementById(id);
+  if(!el) return;
+
+  if(!message){
+    el.className = 'admin-manual-message';
+    el.textContent = '';
+    return;
+  }
+
+  el.className = 'admin-manual-message show ' + (type === 'error' ? 'error' : 'ok');
+  el.textContent = message;
+}
+
+function manualAdminLogin(){
+  const username = v('manualAdminUsername');
+  const password = v('manualAdminPassword');
+
+  if(!username || !password){
+    setManualMessage('manualAdminLoginMessage','Sila masukkan username dan password.','error');
+    return;
+  }
+
+  setManualMessage('manualAdminLoginMessage','');
+
+  google.script.run
+    .withSuccessHandler(function(result){
+      if(!result || !result.success){
+        setManualMessage(
+          'manualAdminLoginMessage',
+          (result && result.message) || 'Log masuk gagal.',
+          'error'
+        );
+        return;
+      }
+
+      manualAdmin.username = username;
+      manualAdmin.password = password;
+
+      document.getElementById('adminManualLoginCard').style.display = 'none';
+      document.getElementById('adminManualPickupCard').style.display = 'block';
+
+      setTimeout(function(){
+        const input = document.getElementById('manualPickupName');
+        if(input) input.focus();
+      },100);
+    })
+    .withFailureHandler(function(error){
+      setManualMessage(
+        'manualAdminLoginMessage',
+        error.message || 'Ralat semasa log masuk.',
+        'error'
+      );
+    })
+    .adminLogin(username, password);
+}
+
+function manualSearchPickupParticipant(){
+  const name = v('manualPickupName');
+
+  if(!name){
+    setManualMessage('manualPickupMessage','Sila taip nama peserta.','error');
+    return;
+  }
+
+  const resultsBox = document.getElementById('manualPickupResults');
+  resultsBox.innerHTML = '<div class="admin-manual-message show ok">Sedang mencari rekod peserta...</div>';
+  document.getElementById('manualPickupConfirm').style.display = 'none';
+  manualPickupSelected = null;
+  setManualMessage('manualPickupMessage','');
+
+  google.script.run
+    .withSuccessHandler(function(result){
+      if(!result || !result.success){
+        resultsBox.innerHTML = '';
+        setManualMessage(
+          'manualPickupMessage',
+          (result && result.message) || 'Carian gagal.',
+          'error'
+        );
+        return;
+      }
+
+      const results = result.results || [];
+
+      if(!results.length){
+        resultsBox.innerHTML = '';
+        setManualMessage(
+          'manualPickupMessage',
+          'Tiada peserta ditemui dengan nama tersebut.',
+          'error'
+        );
+        return;
+      }
+
+      resultsBox.innerHTML = results.map(function(p, i){
+        const done = String(p.shirtPickupStatus || '').toUpperCase() === 'SUDAH AMBIL';
+        return `
+          <div class="admin-shirt-result">
+            <div>
+              <h3>${esc(p.name)}</h3>
+              <div class="admin-shirt-meta">
+                ID: ${esc(p.id || '-')}<br>
+                No. Pekerja: ${esc(p.noPekerja || '-')} • ${esc(p.ptj || '-')}
+              </div>
+              <div class="admin-shirt-size">SAIZ BAJU: ${esc(p.shirtSize || '-')}</div><br>
+              <div class="admin-shirt-status ${done ? 'done' : 'pending'}">
+                ${done ? '✓ SUDAH AMBIL' : '● BELUM AMBIL'}
+              </div>
+              ${done && p.shirtPickupTime ? `<div class="admin-shirt-meta" style="margin-top:7px;">Direkodkan: ${esc(p.shirtPickupTime)}</div>` : ''}
+            </div>
+            <div>
+              <button
+                type="button"
+                class="admin-shirt-action ${done ? 'done' : ''}"
+                ${done ? 'disabled' : ''}
+                onclick="manualSelectPickup(${i})">
+                ${done ? 'BAJU SUDAH DIAMBIL' : 'PILIH PESERTA'}
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      window.manualPickupSearchResults = results;
+    })
+    .withFailureHandler(function(error){
+      resultsBox.innerHTML = '';
+      setManualMessage(
+        'manualPickupMessage',
+        error.message || 'Ralat semasa mencari peserta.',
+        'error'
+      );
+    })
+    .adminSearchShirtParticipant(
+      manualAdmin.username,
+      manualAdmin.password,
+      name
+    );
+}
+
+function manualSelectPickup(index){
+  const list = window.manualPickupSearchResults || [];
+  const participant = list[index];
+  if(!participant) return;
+
+  manualPickupSelected = participant;
+
+  document.getElementById('manualConfirmName').textContent = participant.name || '-';
+  document.getElementById('manualConfirmId').textContent = participant.id || '-';
+  document.getElementById('manualConfirmSize').textContent = participant.shirtSize || '-';
+  document.getElementById('manualConfirmPtj').textContent = participant.ptj || '-';
+  document.getElementById('manualConfirmMessage').className = 'admin-manual-message';
+  document.getElementById('manualConfirmMessage').textContent = '';
+
+  document.getElementById('manualPickupConfirm').style.display = 'block';
+  document.getElementById('manualPickupConfirm').scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function manualCancelPickup(){
+  manualPickupSelected = null;
+  document.getElementById('manualPickupConfirm').style.display = 'none';
+  setManualMessage('manualConfirmMessage','');
+}
+
+function manualConfirmPickup(){
+  if(!manualPickupSelected){
+    setManualMessage('manualConfirmMessage','Sila pilih peserta terlebih dahulu.','error');
+    return;
+  }
+
+  const button = document.getElementById('manualConfirmButton');
+  button.disabled = true;
+  button.textContent = 'SEDANG MEREKODKAN...';
+  setManualMessage('manualConfirmMessage','');
+
+  google.script.run
+    .withSuccessHandler(function(result){
+      button.disabled = false;
+      button.textContent = '✓ SAHKAN BAJU TELAH DIAMBIL';
+
+      if(!result || !result.success){
+        setManualMessage(
+          'manualConfirmMessage',
+          (result && result.message) || 'Pengambilan tidak dapat direkodkan.',
+          'error'
+        );
+        return;
+      }
+
+      setManualMessage(
+        'manualConfirmMessage',
+        result.message || 'Pengambilan baju berjaya direkodkan.',
+        'ok'
+      );
+
+      manualPickupSelected = null;
+
+      setTimeout(function(){
+        document.getElementById('manualPickupConfirm').style.display = 'none';
+        manualSearchPickupParticipant();
+      },900);
+    })
+    .withFailureHandler(function(error){
+      button.disabled = false;
+      button.textContent = '✓ SAHKAN BAJU TELAH DIAMBIL';
+
+      setManualMessage(
+        'manualConfirmMessage',
+        error.message || 'Ralat semasa merekodkan pengambilan.',
+        'error'
+      );
+    })
+    .adminConfirmShirtPickupByRow(
+      manualAdmin.username,
+      manualAdmin.password,
+      manualPickupSelected.rowNumber
+    );
+}
+
+
+/* =========================================================
+   PAGE LOAD
+   ========================================================= */
+
+window.onload =
+function(){
+
+if(isManualAdminMode()){
+  initManualAdminPage();
+  return;
+}
+
+loadDashboard();
+loadMedia();
+
+};
+
+
+/* =========================================================
+   TOAST
+   ========================================================= */
+
+function toast(
+message,
+error=false
+){
+
+const el =
+document.getElementById(
+'toast'
+);
+
+
+el.innerText =
+message;
+
+
+el.classList.toggle(
+'error',
+error
+);
+
+
+el.classList.add(
+'show'
+);
+
+
+setTimeout(
+function(){
+
+el.classList.remove(
+'show'
+);
+
+},
+4000
+);
+
+}
+
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+
+function loadDashboard(){
+
+google.script.run
+
+.withSuccessHandler(
+function(data){
+
+
+document.getElementById(
+'total'
+).innerText =
+data.total;
+
+
+document.getElementById(
+'remaining'
+).innerText =
+data.remaining;
+
+
+document.getElementById(
+'capacity'
+).innerText =
+data.capacity;
+
+
+document.getElementById(
+'heroCapacity'
+).innerText =
+data.capacity;
+
+
+document.getElementById(
+'heroRemaining'
+).innerText =
+data.remaining;
+
+
+document.getElementById(
+'topTotal'
+).innerText =
+data.total;
+
+
+document.getElementById(
+'topRemaining'
+).innerText =
+data.remaining;
+
+
+const latest =
+document.getElementById(
+'latestTop'
+);
+
+
+if(
+!data.latest ||
+!data.latest.length
+){
+
+latest.innerHTML = `
+
+<div class="latest-empty">
+
+Belum ada peserta yang mendaftar.
+
+</div>
+
+`;
+
+return;
+
+}
+
+
+latest.innerHTML =
+data.latest.map(
+function(p,i){
+
+return `
+
+<div class="latest-top-item">
+
+<div class="latest-top-rank">
+
+${String(i+1).padStart(2,'0')}
+
+</div>
+
+
+<div class="latest-top-name">
+
+${esc(p.name)}
+
+</div>
+
+
+<div class="latest-top-ptj">
+
+${esc(p.ptj)}
+
+</div>
+
+
+<div class="latest-top-time">
+
+🕒 ${esc(p.registeredAt)}
+
+</div>
+
+</div>
+
+`;
+
+}
+).join('');
+
+})
+
+.withFailureHandler(
+function(e){
+
+toast(
+e.message,
+true
+);
+
+})
+
+.getDashboardData();
+
+}
+
+
+/* =========================================================
+   REGISTRATION
+   ========================================================= */
+
+document
+.getElementById(
+'registerForm'
+)
+.addEventListener(
+'submit',
+function(e){
+
+e.preventDefault();
+
+
+const form =
+this;
+
+
+const btn =
+document.getElementById(
+'registerBtn'
+);
+
+
+const data =
+getFormData();
+
+
+btn.disabled =
+true;
+
+
+btn.innerText =
+'MENDAFTAR...';
+
+
+google.script.run
+
+.withSuccessHandler(
+function(result){
+
+btn.disabled =
+false;
+
+
+btn.innerText =
+'🏍️ HANTAR PENDAFTARAN';
+
+
+if(!result.success){
+
+toast(
+result.message,
+true
+);
+
+return;
+
+}
+
+
+toast(
+'Pendaftaran berjaya!'
+);
+
+
+form.reset();
+
+
+/*
+ * Masukkan rekod baru ke
+ * searchResults supaya butang
+ * print boleh digunakan.
+ */
+
+searchResults = [
+  result.registration
+];
+
+
+renderResult(
+result.registration
+);
+
+
+loadDashboard();
+
+})
+
+.withFailureHandler(
+function(e){
+
+btn.disabled =
+false;
+
+
+btn.innerText =
+'🏍️ HANTAR PENDAFTARAN';
+
+
+toast(
+e.message,
+true
+);
+
+})
+
+.registerParticipant(
+data
+);
+
+});
+
+
+/* =========================================================
+   GET FORM DATA
+   ========================================================= */
+
+function getFormData(){
+
+return {
+
+name:
+v('name'),
+
+noPekerja:
+v('noPekerja'),
+
+ptj:
+v('ptj'),
+
+phone:
+v('phone'),
+
+motorType:
+v('motorType'),
+
+motorBrand:
+v('motorBrand'),
+
+cc:
+v('cc'),
+
+plate:
+v('plate'),
+
+licenseClass:
+v('licenseClass'),
+
+licenseExpiry:
+v('licenseExpiry'),
+
+roadtaxStatus:
+v('roadtaxStatus'),
+
+roadtaxExpiry:
+v('roadtaxExpiry'),
+
+heirName:
+v('heirName'),
+
+heirRelation:
+v('heirRelation'),
+
+heirPhone:
+v('heirPhone'),
+
+altEmergencyName:
+v('altEmergencyName'),
+
+altEmergencyPhone:
+v('altEmergencyPhone'),
+
+shirtSize:
+v('shirtSize')
+
+};
+
+}
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+function searchParticipant(){
+
+const name =
+v('searchName');
+
+
+if(!name){
+
+toast(
+'Sila masukkan nama peserta.',
+true
+);
+
+return;
+
+}
+
+
+const result =
+document.getElementById(
+'searchResult'
+);
+
+
+result.innerHTML = `
+
+<div class="result-card">
+
+<div style="
+color:#777;
+font-size:11px">
+
+🔎 Sedang mencari rekod...
+
+</div>
+
+</div>
+
+`;
+
+
+google.script.run
+
+.withSuccessHandler(
+function(data){
+
+if(!data.success){
+
+result.innerHTML = `
+
+<div class="result-card"
+style="color:#ff7777">
+
+⚠️ ${esc(data.message)}
+
+</div>
+
+`;
+
+return;
+
+}
+
+
+searchResults =
+data.results;
+
+
+if(
+data.results.length === 1
+){
+
+renderResult(
+data.results[0]
+);
+
+return;
+
+}
+
+
+result.innerHTML = `
+
+<div class="result-card">
+
+<div
+class="card-title"
+style="font-size:25px">
+
+${data.results.length}
+REKOD
+<span>DITEMUI</span>
+
+</div>
+
+
+<div style="
+font-size:10px;
+color:#777;
+margin-bottom:12px">
+
+Sila pilih nama anda.
+
+</div>
+
+
+${data.results.map(
+function(p,i){
+
+return `
+
+<button
+class="btn btn-dark"
+style="
+width:100%;
+text-align:left;
+margin-top:7px"
+onclick="
+selectResult(${i})
+">
+
+<strong>
+${esc(p.name)}
+</strong>
+
+<br>
+
+<small style="color:#777">
+
+${esc(p.ptj)}
+•
+${esc(p.noPekerja)}
+
+</small>
+
+</button>
+
+`;
+
+}
+).join('')}
+
+</div>
+
+`;
+
+})
+
+.withFailureHandler(
+function(e){
+
+toast(
+e.message,
+true
+);
+
+})
+
+.searchParticipant(
+name
+);
+
+}
+
+
+/* =========================================================
+   SELECT SEARCH RESULT
+   ========================================================= */
+
+function selectResult(i){
+
+renderResult(
+searchResults[i]
+);
+
+}
+
+
+/* =========================================================
+   RENDER RESULT
+   ========================================================= */
+
+function renderResult(p){
+
+const result =
+document.getElementById(
+'searchResult'
+);
+
+
+searchResults = [
+  p
+];
+
+
+result.innerHTML = `
+
+<div class="result-card">
+
+
+<div class="result-head">
+
+
+<div>
+
+<div style="
+font-size:8px;
+color:#ffd400;
+font-weight:900">
+
+REKOD PENDAFTARAN DITEMUI
+
+</div>
+
+
+<div class="result-name">
+
+${esc(p.name)}
+
+</div>
+
+</div>
+
+
+<div class="status">
+
+BERJAYA
+
+</div>
+
+
+</div>
+
+
+<div class="info-grid">
+
+
+${info(
+'ID Pendaftaran',
+p.id
+)}
+
+
+${info(
+'Masa Daftar',
+p.registeredAt
+)}
+
+
+${info(
+'No. Pekerja',
+p.noPekerja
+)}
+
+
+${info(
+'PTJ',
+p.ptj
+)}
+
+
+${info(
+'No. Telefon',
+p.phone
+)}
+
+
+${info(
+'Motosikal',
+p.motorBrand +
+' / ' +
+p.motorType
+)}
+
+
+${info(
+'C.C',
+p.cc
+)}
+
+
+${info(
+'No. Plat',
+p.plate
+)}
+
+
+${info(
+'Kelas Lesen',
+p.licenseClass
+)}
+
+
+${info(
+'Luput Lesen',
+p.licenseExpiry
+)}
+
+
+${info(
+'Roadtax',
+p.roadtaxStatus
+)}
+
+
+${info(
+'Luput Roadtax',
+p.roadtaxExpiry
+)}
+
+
+${info(
+'Saiz Baju',
+p.shirtSize
+)}
+
+
+${info(
+'Nama Waris',
+p.heirName
+)}
+
+
+${info(
+'Hubungan Waris',
+p.heirRelation
+)}
+
+
+${info(
+'Telefon Waris',
+p.heirPhone
+)}
+
+
+</div>
+
+
+<!-- PRINT -->
+
+<div style="margin-top:16px">
+
+<button
+class="btn btn-yellow"
+onclick="
+printCurrentResult(
+${p.rowNumber}
+)
+">
+
+🖨️ SCREEN SHOT MAKLUMAT
+UNTUK AMBIL BAJU
+
+</button>
+
+</div>
+
+
+<!-- EDIT -->
+
+<div style="margin-top:10px">
+
+<button
+class="btn btn-dark"
+style="width:100%"
+onclick="
+openEdit(
+${p.rowNumber}
+)
+">
+
+✏️ EDIT / BETULKAN MAKLUMAT
+
+</button>
+
+</div>
+
+
+<!-- EDIT BOX -->
+
+<div
+id="edit_${p.rowNumber}"
+class="edit-box">
+
+
+<div class="edit-title">
+
+EDIT MAKLUMAT PENDAFTARAN
+
+</div>
+
+
+<div class="edit-desc">
+
+Jika terdapat kesilapan dalam maklumat,
+anda boleh membuat pembetulan.
+Untuk keselamatan, No. Telefon semasa
+pendaftaran diperlukan sebagai pengesahan.
+
+</div>
+
+
+<div class="verify-box">
+
+
+<div class="group">
+
+<label>
+
+No. Telefon Pengesahan
+
+</label>
+
+
+<input
+id="verify_${p.rowNumber}"
+type="tel"
+placeholder="No. telefon semasa daftar">
+
+</div>
+
+
+<button
+class="btn btn-yellow"
+style="margin-top:10px"
+onclick="
+verifyEdit(
+${p.rowNumber}
+)
+">
+
+BUKA RUANGAN EDIT
+
+</button>
+
+
+</div>
+
+
+<div
+id="editForm_${p.rowNumber}"
+style="
+display:none;
+margin-top:18px">
+
+${editForm(p)}
+
+</div>
+
+
+</div>
+
+
+<!-- ABSENCE -->
+
+<div class="absence">
+
+
+<h3>
+
+⚠️ TIDAK DAPAT HADIR?
+
+</h3>
+
+
+<p>
+
+Jika telah berjaya mendaftar tetapi
+pada saat akhir tidak dapat menyertai
+program, sila maklumkan kepada pihak
+urusetia melalui ruangan ini.
+
+</p>
+
+
+<textarea
+id="absence_${p.rowNumber}"
+placeholder="Sila nyatakan sebab tidak dapat hadir..."></textarea>
+
+
+<button
+class="btn btn-red"
+style="margin-top:9px"
+onclick="
+absence(
+${p.rowNumber}
+)
+">
+
+⚠️ HANTAR MAKLUMAN TIDAK DAPAT HADIR
+
+</button>
+
+
+</div>
+
+
+</div>
+
+`;
+
+
+setTimeout(
+function(){
+
+result.scrollIntoView({
+behavior:'smooth',
+block:'center'
+});
+
+},
+100
+);
+
+}
+
+
+/* =========================================================
+   EDIT FORM
+   ========================================================= */
+
+function editForm(p){
+
+const relations = [
+
+'Isteri',
+'Suami',
+'Ibu',
+'Bapa',
+'Adik',
+'Abang',
+'Kakak',
+'Anak',
+'Lain-lain'
+
+];
+
+
+const sizes = [
+
+'XS',
+'S',
+'M',
+'L',
+'XL',
+'2XL',
+'3XL',
+'4XL',
+'5XL'
+
+];
+
+
+return `
+
+<div class="form-grid">
+
+
+<div class="group">
+
+<label>
+Nama *
+</label>
+
+<input
+id="edit_name_${p.rowNumber}"
+value="${attr(p.name)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+No. Pekerja *
+</label>
+
+<input
+id="edit_noPekerja_${p.rowNumber}"
+value="${attr(p.noPekerja)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+PTJ *
+</label>
+
+<input
+id="edit_ptj_${p.rowNumber}"
+value="${attr(p.ptj)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+No. Telefon *
+</label>
+
+<input
+id="edit_phone_${p.rowNumber}"
+value="${attr(p.phone)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+Jenis Motosikal *
+</label>
+
+<input
+id="edit_motorType_${p.rowNumber}"
+value="${attr(p.motorType)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+Jenama Motosikal *
+</label>
+
+<input
+id="edit_motorBrand_${p.rowNumber}"
+value="${attr(p.motorBrand)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+C.C *
+</label>
+
+<input
+id="edit_cc_${p.rowNumber}"
+value="${attr(p.cc)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+No. Plat *
+</label>
+
+<input
+id="edit_plate_${p.rowNumber}"
+value="${attr(p.plate)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+Kelas Lesen *
+</label>
+
+<select
+id="edit_licenseClass_${p.rowNumber}">
+
+<option
+value="B2"
+${p.licenseClass==='B2'?'selected':''}>
+
+B2
+
+</option>
+
+
+<option
+value="B"
+${p.licenseClass==='B'?'selected':''}>
+
+B
+
+</option>
+
+
+<option
+value="Lain-lain"
+${p.licenseClass==='Lain-lain'?'selected':''}>
+
+Lain-lain
+
+</option>
+
+</select>
+
+</div>
+
+
+<div class="group">
+
+<label>
+Tarikh Luput Lesen *
+</label>
+
+<input
+type="date"
+id="edit_licenseExpiry_${p.rowNumber}"
+value="${attr(p.licenseExpiryInput)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+Status Roadtax *
+</label>
+
+<select
+id="edit_roadtaxStatus_${p.rowNumber}">
+
+<option
+value="Masih Sah"
+${p.roadtaxStatus==='Masih Sah'?'selected':''}>
+
+Masih Sah
+
+</option>
+
+
+<option
+value="Tidak Sah"
+${p.roadtaxStatus==='Tidak Sah'?'selected':''}>
+
+Tidak Sah
+
+</option>
+
+</select>
+
+</div>
+
+
+<div class="group">
+
+<label>
+Tarikh Luput Roadtax
+</label>
+
+<input
+type="date"
+id="edit_roadtaxExpiry_${p.rowNumber}"
+value="${attr(p.roadtaxExpiryInput)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+Nama Waris *
+</label>
+
+<input
+id="edit_heirName_${p.rowNumber}"
+value="${attr(p.heirName)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+Hubungan Waris *
+</label>
+
+<select
+id="edit_heirRelation_${p.rowNumber}">
+
+<option value="">
+Pilih hubungan
+</option>
+
+
+${relations.map(
+function(x){
+
+return `
+
+<option
+value="${x}"
+${p.heirRelation===x?'selected':''}>
+
+${x}
+
+</option>
+
+`;
+
+}
+).join('')}
+
+</select>
+
+</div>
+
+
+<div class="group">
+
+<label>
+No. Telefon Waris *
+</label>
+
+<input
+id="edit_heirPhone_${p.rowNumber}"
+value="${attr(p.heirPhone)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+Nama Contact Kecemasan Alternatif
+</label>
+
+<input
+id="edit_altEmergencyName_${p.rowNumber}"
+value="${attr(p.altEmergencyName)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+No. Telefon Kecemasan Alternatif
+</label>
+
+<input
+id="edit_altEmergencyPhone_${p.rowNumber}"
+value="${attr(p.altEmergencyPhone)}">
+
+</div>
+
+
+<div class="group">
+
+<label>
+Saiz Baju *
+</label>
+
+<select
+id="edit_shirtSize_${p.rowNumber}">
+
+<option value="">
+Pilih saiz
+</option>
+
+
+${sizes.map(
+function(x){
+
+return `
+
+<option
+value="${x}"
+${p.shirtSize===x?'selected':''}>
+
+${x}
+
+</option>
+
+`;
+
+}
+).join('')}
+
+</select>
+
+</div>
+
+
+<div class="full">
+
+<button
+class="btn btn-yellow"
+onclick="
+saveEdit(
+${p.rowNumber}
+)
+">
+
+💾 SIMPAN PERUBAHAN
+
+</button>
+
+</div>
+
+
+</div>
+
+`;
+
+}
+
+
+/* =========================================================
+   OPEN EDIT
+   ========================================================= */
+
+function openEdit(row){
+
+const box =
+document.getElementById(
+'edit_'+row
+);
+
+
+if(
+box.style.display ===
+'block'
+){
+
+box.style.display =
+'none';
+
+} else {
+
+box.style.display =
+'block';
+
+}
+
+}
+
+
+/* =========================================================
+   VERIFY EDIT
+   ========================================================= */
+
+function verifyEdit(row){
+
+const phone =
+v('verify_'+row);
+
+
+if(!phone){
+
+toast(
+'Sila masukkan No. Telefon.',
+true
+);
+
+return;
+
+}
+
+
+google.script.run
+
+.withSuccessHandler(
+function(){
+
+document
+.getElementById(
+'editForm_'+row
+)
+.style.display =
+'block';
+
+
+toast(
+'Pengesahan berjaya. Anda boleh edit maklumat.'
+);
+
+})
+
+.withFailureHandler(
+function(e){
+
+toast(
+e.message,
+true
+);
+
+})
+
+.getParticipantForEdit(
+row,
+phone
+);
+
+}
+
+
+/* =========================================================
+   SAVE EDIT
+   ========================================================= */
+
+function saveEdit(row){
+
+const verification =
+v('verify_'+row);
+
+
+if(!verification){
+
+toast(
+'Sila masukkan No. Telefon pengesahan.',
+true
+);
+
+return;
+
+}
+
+
+const data = {
+
+name:
+v('edit_name_'+row),
+
+noPekerja:
+v('edit_noPekerja_'+row),
+
+ptj:
+v('edit_ptj_'+row),
+
+phone:
+v('edit_phone_'+row),
+
+motorType:
+v('edit_motorType_'+row),
+
+motorBrand:
+v('edit_motorBrand_'+row),
+
+cc:
+v('edit_cc_'+row),
+
+plate:
+v('edit_plate_'+row),
+
+licenseClass:
+v('edit_licenseClass_'+row),
+
+licenseExpiry:
+v('edit_licenseExpiry_'+row),
+
+roadtaxStatus:
+v('edit_roadtaxStatus_'+row),
+
+roadtaxExpiry:
+v('edit_roadtaxExpiry_'+row),
+
+heirName:
+v('edit_heirName_'+row),
+
+heirRelation:
+v('edit_heirRelation_'+row),
+
+heirPhone:
+v('edit_heirPhone_'+row),
+
+altEmergencyName:
+v('edit_altEmergencyName_'+row),
+
+altEmergencyPhone:
+v('edit_altEmergencyPhone_'+row),
+
+shirtSize:
+v('edit_shirtSize_'+row)
+
+};
+
+
+if(
+!confirm(
+'Adakah anda pasti mahu menyimpan perubahan?'
+)
+){
+
+return;
+
+}
+
+
+google.script.run
+
+.withSuccessHandler(
+function(result){
+
+toast(
+result.message
+);
+
+
+searchResults = [
+  result.registration
+];
+
+
+renderResult(
+result.registration
+);
+
+
+loadDashboard();
+
+})
+
+.withFailureHandler(
+function(e){
+
+toast(
+e.message,
+true
+);
+
+})
+
+.updateParticipant(
+row,
+verification,
+data
+);
+
+}
+
+
+/* =========================================================
+   ABSENCE
+   ========================================================= */
+
+function absence(row){
+
+const reason =
+v('absence_'+row);
+
+
+if(!reason){
+
+toast(
+'Sila masukkan sebab tidak dapat hadir.',
+true
+);
+
+return;
+
+}
+
+
+if(
+!confirm(
+'Adakah anda pasti tidak dapat hadir ke program?'
+)
+){
+
+return;
+
+}
+
+
+google.script.run
+
+.withSuccessHandler(
+function(result){
+
+toast(
+result.message
+);
+
+
+document.getElementById(
+'searchResult'
+).innerHTML = `
+
+<div class="result-card"
+style="
+border-color:
+rgba(73,232,155,.3);
+">
+
+<div style="
+font-family:Bebas Neue;
+font-size:27px;
+color:#49e89b">
+
+MAKLUMAN DITERIMA
+
+</div>
+
+
+<div style="
+font-size:11px;
+color:#999;
+line-height:1.7;
+margin-top:8px">
+
+Makluman bahawa anda tidak dapat hadir
+telah berjaya direkodkan oleh sistem.
+
+Terima kasih kerana memaklumkan
+kepada pihak urusetia.
+
+</div>
+
+</div>
+
+`;
+
+
+loadDashboard();
+
+})
+
+.withFailureHandler(
+function(e){
+
+toast(
+e.message,
+true
+);
+
+})
+
+.submitAbsence(
+row,
+reason
+);
+
+}
+
+
+/* =========================================================
+   PRINT CURRENT RESULT
+   ========================================================= */
+
+
+/* =========================================================
+   DATA PILIHAN TAMBAHAN — KEKALKAN SEMASA PAPAR / CETAK
+   ========================================================= */
+function normalizeRegistrationChoices(data){
+  if(!data) return data;
+  data.licenseClass = data.licenseClass || '';
+  data.roadtaxStatus = data.roadtaxStatus || '';
+  data.heirRelation = data.heirRelation || '';
+  data.shirtSize = data.shirtSize || '';
+  return data;
+}
+
+function printCurrentResult(row){
+
+const participant =
+searchResults.find(
+function(p){
+
+return Number(p.rowNumber) ===
+Number(row);
+
+}
+);
+
+
+if(!participant){
+
+toast(
+'Rekod peserta tidak ditemui.',
+true
+);
+
+return;
+
+}
+
+
+printSlip(
+participant
+);
+
+}
+
+
+/* =========================================================
+   PRINT SLIP
+   ========================================================= */
+
+function printSlip(data){
+
+const win =
+window.open(
+'',
+'_blank'
+);
+
+
+if(!win){
+
+toast(
+'Sila benarkan pop-up browser untuk fungsi cetak.',
+true
+);
+
+return;
+
+}
+
+
+win.document.write(`
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+UniSZA Ride Merdeka 2026
+</title>
+
+
+<style>
+
+body{
+
+font-family:
+Arial,
+sans-serif;
+
+padding:35px;
+
+color:#111;
+
+}
+
+
+.header{
+
+border-bottom:
+5px solid
+#FFD400;
+
+padding-bottom:15px;
+
+}
+
+
+h1{
+
+margin:0;
+
+font-size:30px;
+
+}
+
+
+.subtitle{
+
+margin-top:5px;
+
+font-size:13px;
+
+}
+
+
+.id{
+
+display:inline-block;
+
+margin-top:12px;
+
+padding:9px 12px;
+
+background:#111;
+
+color:#FFD400;
+
+font-weight:bold;
+
+}
+
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:25px;
+
+}
+
+
+td{
+
+padding:10px;
+
+border-bottom:
+1px solid
+#ddd;
+
+font-size:12px;
+
+}
+
+
+td:first-child{
+
+width:35%;
+
+font-weight:bold;
+
+background:#f4f4f4;
+
+}
+
+
+.shirt{
+
+margin-top:25px;
+
+padding:20px;
+
+border:
+3px solid
+#111;
+
+text-align:center;
+
+font-size:25px;
+
+font-weight:bold;
+
+}
+
+
+.footer{
+
+margin-top:35px;
+
+text-align:center;
+
+font-size:10px;
+
+color:#777;
+
+line-height:1.7;
+
+}
+
+
+@media print{
+
+body{
+padding:15px;
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="header">
+
+<h1>
+UniSZA Ride Merdeka 2026
+</h1>
+
+
+<div class="subtitle">
+
+SLIP PENGESAHAN PENDAFTARAN
+
+</div>
+
+
+<div class="id">
+
+${esc(data.id)}
+
+</div>
+
+</div>
+
+
+<table>
+
+
+<tr>
+
+<td>
+Nama
+</td>
+
+<td>
+${esc(data.name)}
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+No. Pekerja
+</td>
+
+<td>
+${esc(data.noPekerja)}
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+PTJ
+</td>
+
+<td>
+${esc(data.ptj)}
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+No. Telefon
+</td>
+
+<td>
+${esc(data.phone)}
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Motosikal
+</td>
+
+<td>
+${esc(data.motorBrand)}
+-
+${esc(data.motorType)}
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+C.C
+</td>
+
+<td>
+${esc(data.cc)}
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+No. Plat
+</td>
+
+<td>
+${esc(data.plate)}
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Kelas Lesen
+</td>
+
+<td>
+${esc(data.licenseClass)}
+</td>
+
+</tr>
+
+
+<tr>
+<td>
+Tarikh Luput Lesen
+</td>
+<td>
+${esc(data.licenseExpiry)}
+</td>
+</tr>
+
+<tr>
+<td>
+Status Roadtax
+</td>
+<td>
+${esc(data.roadtaxStatus)}
+</td>
+</tr>
+
+<tr>
+<td>
+Hubungan Waris
+</td>
+<td>
+${esc(data.heirRelation)}
+</td>
+</tr>
+
+<tr>
+<td>
+Saiz Baju
+</td>
+
+<td>
+<strong>
+${esc(data.shirtSize)}
+</strong>
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Masa Daftar
+</td>
+
+<td>
+${esc(data.registeredAt)}
+</td>
+
+</tr>
+
+
+</table>
+
+
+<div class="shirt">
+
+SAIZ BAJU:
+${esc(data.shirtSize)}
+
+</div>
+
+
+<div class="footer">
+
+Sila bawa slip ini semasa
+pengambilan baju.
+
+<br><br>
+
+Pusat Pembangunan Holistik Pelajar
+
+<br>
+
+Universiti Sultan Zainal Abidin (UniSZA)
+
+</div>
+
+
+<script>
+
+window.onload =
+function(){
+
+window.print();
+
+};
+
+<\/script>
+
+
+</body>
+
+</html>
+
+`);
+
+
+win.document.close();
+
+}
+
+
+/* =========================================================
+   ADMIN MODAL
+   ========================================================= */
+
+function openAdminModal(){
+
+document
+.getElementById(
+'adminModal'
+)
+.classList.add(
+'show'
+);
+
+
+setTimeout(
+function(){
+
+document
+.getElementById(
+'adminPassword'
+)
+.focus();
+
+},
+100
+);
+
+}
+
+
+function closeAdminModal(){
+
+document
+.getElementById(
+'adminModal'
+)
+.classList.remove(
+'show'
+);
+
+}
+
+
+function closeAdminOutside(event){
+
+if(
+event.target.id ===
+'adminModal'
+){
+
+closeAdminModal();
+
+}
+
+}
+
+
+/* =========================================================
+   ADMIN LOGIN
+   ========================================================= */
+
+function loginAdmin(){
+
+const username =
+v('adminUsername');
+
+
+const password =
+v('adminPassword');
+
+
+if(
+!username ||
+!password
+){
+
+toast(
+'Sila masukkan username dan password.',
+true
+);
+
+return;
+
+}
+
+
+google.script.run
+
+.withSuccessHandler(
+function(result){
+
+if(!result.success){
+
+toast(
+result.message,
+true
+);
+
+return;
+
+}
+
+
+admin.username =
+username;
+
+admin.password =
+password;
+
+
+closeAdminModal();
+
+
+document.getElementById(
+'adminSection'
+).style.display =
+'block';
+
+
+loadAdmin();
+
+
+toast(
+'Log masuk Admin berjaya.'
+);
+
+
+setTimeout(
+function(){
+
+document
+.getElementById(
+'adminSection'
+)
+.scrollIntoView({
+behavior:'smooth',
+block:'start'
+});
+
+},
+300
+);
+
+})
+
+.withFailureHandler(
+function(e){
+
+toast(
+e.message,
+true
+);
+
+})
+
+.adminLogin(
+username,
+password
+);
+
+}
+
+
+/* =========================================================
+   ADMIN LOAD
+   ========================================================= */
+
+function loadAdmin(){
+
+google.script.run
+
+.withSuccessHandler(
+function(data){
+
+document.getElementById(
+'adminTotal'
+).innerText =
+data.total;
+
+
+document.getElementById(
+'adminCapacity'
+).innerText =
+data.capacity;
+
+
+document.getElementById(
+'adminRemaining'
+).innerText =
+Math.max(
+0,
+data.capacity -
+data.total
+);
+
+
+const body =
+document.getElementById(
+'adminBody'
+);
+
+
+if(
+!data.participants.length
+){
+
+body.innerHTML = `
+
+<tr>
+
+<td
+colspan="9"
+style="
+text-align:center;
+color:#666">
+
+Tiada rekod peserta.
+
+</td>
+
+</tr>
+
+`;
+
+return;
+
+}
+
+
+body.innerHTML =
+data.participants.map(
+function(p){
+
+const absent =
+String(p.absent)
+.toUpperCase() ===
+'YA';
+
+
+return `
+
+<tr>
+
+<td>
+${esc(p.id)}
+</td>
+
+
+<td>
+
+<strong>
+${esc(p.name)}
+</strong>
+
+<br>
+
+<span style="color:#666">
+${esc(p.noPekerja)}
+</span>
+
+</td>
+
+
+<td>
+${esc(p.ptj)}
+</td>
+
+
+<td>
+${esc(p.plate)}
+</td>
+
+
+<td>
+
+${esc(p.motorBrand)}
+
+<br>
+
+<span style="color:#777">
+${esc(p.cc)}
+</span>
+
+</td>
+
+
+<td>
+
+<strong>
+${esc(p.shirtSize)}
+</strong>
+
+</td>
+
+
+<td>
+${esc(p.registeredAt)}
+</td>
+
+
+<td>
+
+${
+absent
+
+?
+
+'<span style="color:#ff6666;font-weight:800">TIDAK HADIR</span>'
+
+:
+
+'<span style="color:#49e89b;font-weight:800">BERJAYA</span>'
+
+}
+
+</td>
+
+
+<td>
+
+<button
+class="delete"
+onclick="
+deleteParticipant(
+${p.rowNumber},
+'${attr(p.name)}'
+)
+">
+
+DELETE
+
+</button>
+
+</td>
+
+
+</tr>
+
+`;
+
+}
+).join('');
+
+})
+
+.withFailureHandler(
+function(e){
+
+toast(
+e.message,
+true
+);
+
+})
+
+.getAdminData(
+admin.username,
+admin.password
+);
+
+}
+
+
+/* =========================================================
+   ADMIN DELETE
+   ========================================================= */
+
+function deleteParticipant(
+row,
+name
+){
+
+const confirmed =
+confirm(
+
+'⚠️ AMARAN ADMIN\n\n' +
+
+'Adakah anda pasti mahu memadam peserta:\n\n' +
+
+name +
+
+'\n\nRekod ini akan dipadam terus daripada sistem.'
+
+);
+
+
+if(!confirmed){
+
+return;
+
+}
+
+
+google.script.run
+
+.withSuccessHandler(
+function(result){
+
+toast(
+result.message
+);
+
+
+loadAdmin();
+
+loadDashboard();
+
+})
+
+.withFailureHandler(
+function(e){
+
+toast(
+e.message,
+true
+);
+
+})
+
+.adminDeleteParticipant(
+admin.username,
+admin.password,
+row
+);
+
+}
+
+
+/* =========================================================
+   ADMIN CAPACITY
+   ========================================================= */
+
+function saveCapacity(){
+
+const capacity =
+v('newCapacity');
+
+
+if(!capacity){
+
+toast(
+'Sila masukkan kapasiti baru.',
+true
+);
+
+return;
+
+}
+
+
+google.script.run
+
+.withSuccessHandler(
+function(result){
+
+toast(
+result.message
+);
+
+
+document.getElementById(
+'newCapacity'
+).value =
+'';
+
+
+loadAdmin();
+
+loadDashboard();
+
+})
+
+.withFailureHandler(
+function(e){
+
+toast(
+e.message,
+true
+);
+
+})
+
+.adminSetCapacity(
+admin.username,
+admin.password,
+capacity
+);
+
+}
+
+
+/* =========================================================
+   ADMIN MEDIA
+   ========================================================= */
+
+function uploadMedia(
+inputId,
+type
+){
+
+const input =
+document.getElementById(
+inputId
+);
+
+
+if(
+!input.files ||
+!input.files[0]
+){
+
+toast(
+'Sila pilih gambar dahulu.',
+true
+);
+
+return;
+
+}
+
+
+const file =
+input.files[0];
+
+
+if(
+!file.type.startsWith(
+'image/'
+)
+){
+
+toast(
+'Fail mestilah gambar.',
+true
+);
+
+return;
+
+}
+
+
+if(
+file.size >
+8 * 1024 * 1024
+){
+
+toast(
+'Saiz gambar terlalu besar. Maksimum 8MB.',
+true
+);
+
+return;
+
+}
+
+
+const reader =
+new FileReader();
+
+
+reader.onload =
+function(e){
+
+toast(
+'Memuat naik gambar...'
+);
+
+
+google.script.run
+
+.withSuccessHandler(
+function(result){
+
+toast(
+result.message
+);
+
+
+input.value =
+'';
+
+
+loadMedia();
+
+})
+
+.withFailureHandler(
+function(e){
+
+toast(
+e.message,
+true
+);
+
+})
+
+.uploadMedia(
+
+admin.username,
+
+admin.password,
+
+e.target.result,
+
+file.name,
+
+type
+
+);
+
+};
+
+
+reader.readAsDataURL(
+file
+);
+
+}
+
+
+/* =========================================================
+   LOAD MEDIA
+   ========================================================= */
+
+function loadMedia(){
+
+google.script.run
+
+.withSuccessHandler(
+function(data){
+
+
+if(
+data.banner &&
+data.banner.data
+){
+
+const banner =
+document.getElementById(
+'banner'
+);
+
+
+banner.style.backgroundImage =
+`url("${data.banner.data}")`;
+
+
+banner.classList.add(
+'active'
+);
+
+}
+
+
+setLogo(
+data.unisza,
+'uniszaLogo',
+'uniszaPlaceholder'
+);
+
+
+setLogo(
+data.pendaftar,
+'pendaftarLogo',
+'pendaftarPlaceholder'
+);
+
+
+setLogo(
+data.pphp,
+'pphpLogo',
+'pphpPlaceholder'
+);
+
+})
+
+.withFailureHandler(
+function(){
+
+/*
+ * Media tidak wajib.
+ */
+
+})
+
+.getAllMedia();
+
+}
+
+
+/* =========================================================
+   SET LOGO
+   ========================================================= */
+
+function setLogo(
+data,
+imgId,
+placeholderId
+){
+
+if(
+!data ||
+!data.data
+){
+
+return;
+
+}
+
+
+const img =
+document.getElementById(
+imgId
+);
+
+
+const placeholder =
+document.getElementById(
+placeholderId
+);
+
+
+img.src =
+data.data;
+
+
+img.style.display =
+'block';
+
+
+placeholder.style.display =
+'none';
+
+}
+
+
+/* =========================================================
+   ADMIN LOGOUT
+   ========================================================= */
+
+function logoutAdmin(){
+
+admin = {
+
+username:'',
+password:''
+
+};
+
+
+document.getElementById(
+'adminSection'
+).style.display =
+'none';
+
+
+document.getElementById(
+'adminPassword'
+).value =
+'';
+
+
+toast(
+'Log keluar Admin berjaya.'
+);
+
+
+window.scrollTo({
+top:0,
+behavior:'smooth'
+});
+
+}
+
+
+/* =========================================================
+   HELPERS
+   ========================================================= */
+
+function v(id){
+
+const el =
+document.getElementById(id);
+
+
+return el
+  ? el.value.trim()
+  : '';
+
+}
+
+
+function info(
+label,
+value
+){
+
+return `
+
+<div class="info">
+
+<div class="info-label">
+
+${esc(label)}
+
+</div>
+
+
+<div class="info-value">
+
+${esc(value || '-')}
+
+</div>
+
+</div>
+
+`;
+
+}
+
+
+function esc(value){
+
+return String(
+value ?? ''
+)
+
+.replace(
+/&/g,
+'&amp;'
+)
+
+.replace(
+/</g,
+'&lt;'
+)
+
+.replace(
+/>/g,
+'&gt;'
+)
+
+.replace(
+/"/g,
+'&quot;'
+)
+
+.replace(
+/'/g,
+'&#039;'
+);
+
+}
+
+
+function attr(value){
+
+return esc(value);
+
+}
+
+</script>
+
+
+</body>
+
+</html>
